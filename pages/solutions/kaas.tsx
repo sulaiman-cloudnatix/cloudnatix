@@ -7,15 +7,15 @@ const features = [
   {
     name: 'Enterprise Challenge(s)',
     description:
-      'Enterprises have adopted cloud and to a greater extent Cloud Native architectures leveraging a bottoms-up approach that empowers the enterprise development teams in order to improve application delivery agility. Some have even termed this approach as “Bi-Modal IT”. This Bi-Modal approach is apt at encouraging innovation and this approach has definitely ushered in the golden age of enterprise innovation, yet there remain skeptics. As cloud and cloud native architectures have evolved to become mainstream, the challenges of fragmented and repetitive manual operations that were done to be expedient, now require to be re-thought. The manual federation of access, quota, operational and compliance policy is difficult to manage in a unified, federated way across multiple clouds and clusters.',
-    imageSrc: '/images/supplemental/Multi-Cluster+Control.png',
+      'As enterprises increasingly adopt cloud native application architectures and implement kubernetes as the infrastructure substrate, we see SRE and DevOps teams facing a new set of challenges. The challenges around infrastructure provisioning ( VPC, ELB, Elastic IP et.c) to Day 2 Operations ( updates, upgrades, access control, quota management, resource and cost optimization). These challenges start to increase in complexity as kubernetes projects move from exploration to production, wherein we see the reliability degrading incidents and overworked DevOps team’s attrition quickly grow in tandem with kubernetes cluster count.',
+    imageSrc: '/images/supplemental/Automate.png',
     imageAlt: ''
   },
   {
     name: 'The CloudNatix Solution',
     description:
-      'The CloudNatix solution provides a planet scale cluster manager, delivered as a service, that can observe costs, operations, performance, and SLAs across clusters, across public and private clouds, spanning VMS and Kubernetes on a single pane of glass so they can operate above the clouds in an automated, easy to use way. Bandage solutions like running multiple spreadsheet models to figure out how to optimize or bespoke scripts to run operational runbooks are not scalable. What’s needed are tools like machine learning to automate and optimize at scale, bin packing technology to intelligently and automatically optimize across a planet scale infrastructure fleet, and high levels of automation either with humans in the loop or out. That’s how hyperscalers and webscalers are already doing it and with CloudNatix, every enterprise can put their infrastructure on Autopilot.',
-    imageSrc: '/images/supplemental/Multi-Cluster+Control,+2.png',
+      'The CloudNatix solution provides a planet scale cluster manager, delivered as a service, that can automate Day 0 to Day 2 Operations across kubernetes and VM Clusters, across Virtual Machine substrate or on top of existing Managed K8s clusters like EKS, AKS and GKE. Bandage solutions like bespoke scripts to run operational runbooks are not scalable. CloudNatix has built-in tools like machine learning to automate operations and optimize at scale, bin packing technology to intelligently and automatically size workloads across a planet scale infrastructure fleet, with humans in the loop or out. That’s exactly how hyperscalers and webscalers are already doing it and now enterprises can too.',
+    imageSrc: '/images/supplemental/Automate,+2.png',
     imageAlt: ''
   }
 ]
@@ -28,11 +28,11 @@ export default function MultiClusterControl() {
         <div className='mx-auto max-w-2xl px-4 lg:max-w-none'>
           <div className='max-w-3xl'>
             <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-              Multi Cluster Control
+              Cloud managed k8s as a service (KaaS)
             </p>
             <p className='mt-4 text-gray-500'>
-              Control & aggregate resources from multiple clusters as a single
-              planet scale cluster, improving productivity, and reducing MTTR
+              Automate Day 1 and Day 2 Operations across a fleet of multiple K8s
+              and VM Clusters
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export default function MultiClusterControl() {
                     {feature.description}
                   </p>
                 </div>
-                <div className='flex lg:col-span-7 xl:col-span-6 text-center justify-center lg:justify-end'>
+                <div className='flex lg:col-span-7 xl:col-span-6 justify-center lg:justify-end'>
                   <Image
                     src={feature.imageSrc}
                     alt={feature.imageAlt}
@@ -74,15 +74,30 @@ export default function MultiClusterControl() {
             </p>
             <ul className='list-disc ml-10 mt-3 text-gray-500 space-y-3'>
               <li>
+                Cloud Native Transformation to enable your teams with a
+                consistent, managed Kubernetes infrastructure across any cloud
+                or on-premise environment.
+              </li>
+              <li>
+                Unified cost & operational visibility across heterogeneous cloud
+                infrastructures spanning cloud, cloud native and multi cloud
+                environments.
+              </li>
+              <li>
+                Global Operational Control Plane - Automate Day 2 operations
+                across clusters, drive down MTTR via faster, automated incident
+                resolution.
+              </li>
+              <li>
                 Reduce DevOps Toil - DevOps team can automate once, and let the
                 CloudNatix federate the operational plumbing and enterprise
                 policies across multiple existing clusters.
               </li>
               <li>
-                Increase availability by reducing MTTR - A unified pane across
-                clusters, across clouds and enable teams to search and easily
-                find a needle in a haystack of container pods, reducing the time
-                it takes to remediate an incident and increase availability.
+                No Cloud Lock-in - Our cloud agnostic architecture ensures that
+                your enterprise business is not at the mercy of Cloud Service
+                Providers by providing a truly cloud independent operational
+                layer with freedom of choice.
               </li>
             </ul>
           </div>

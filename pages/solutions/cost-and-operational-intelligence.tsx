@@ -26,7 +26,7 @@ export default function CostAndOperationalIntelligence() {
   return (
     <div className='bg-white'>
       <Header />
-      <div className='mx-auto max-w-6xl py-24 sm:py-20 sm:px-2 lg:px-4'>
+      <div className='mx-auto max-w-6xl py-12 sm:py-20 sm:px-2 lg:px-4'>
         <div className='mx-auto max-w-2xl px-4 lg:max-w-none'>
           <div className='max-w-3xl'>
             <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
@@ -45,7 +45,7 @@ export default function CostAndOperationalIntelligence() {
                 key={feature.name}
                 className='flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8'
               >
-                <div className='mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4'>
+                <div className='mt-6 lg:col-span-5 lg:mt-0 xl:col-span-6'>
                   <h3 className='text-2xl font-medium text-gray-900'>
                     {feature.name}
                   </h3>
@@ -53,7 +53,7 @@ export default function CostAndOperationalIntelligence() {
                     {feature.description}
                   </p>
                 </div>
-                <div className='flex lg:col-span-7 xl:col-span-8 text-center justify-end'>
+                <div className='flex lg:col-span-7 xl:col-span-6 text-center justify-center lg:justify-end'>
                   <Image
                     src={feature.imageSrc}
                     alt={feature.imageAlt}

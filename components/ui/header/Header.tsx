@@ -30,28 +30,28 @@ const solutions = [
     name: 'Cost & Operational Intelligence',
     description:
       'Observe, understand, attribute and forecast application costs and performance across multiple clouds and multiple kubernetes clusters.',
-    href: '#',
+    href: '/solutions/cost-and-operational-intelligence',
     icon: CursorArrowRaysIcon
   },
   {
     name: 'VM & Kubernetes Cost Redeuction',
     description:
       'Reduce cloud & kubernetes costs while optimizing cloud usage by matching resource allocation with application needs across traditional VMs and Cloud Native Applications',
-    href: '#',
+    href: '/solutions/cost-reduction',
     icon: ShieldCheckIcon
   },
   {
     name: 'Multi Cluster Control',
     description:
       'Control & aggregate resources from multiple clusters as a single planet scale cluster, improving productivity, and reducing MTTR',
-    href: '#',
+    href: '/solutions/multi-cluster-control',
     icon: Squares2X2Icon
   },
   {
     name: 'Cloud managed k8s as a Service (KaaS)',
     description:
       'Automate Day 1 and Day 2 Operations across a fleet of multiple K8s and VM Clusters',
-    href: '#',
+    href: '/solutions/kaas',
     icon: ArrowPathIcon
   }
 ]
