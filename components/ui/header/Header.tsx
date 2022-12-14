@@ -23,7 +23,7 @@ const solutions = [
     name: 'Overview',
     description:
       'Discover CloudNatix Solutions by use case, role, industry, and customers.',
-    href: '#',
+    href: '/solutions',
     icon: ChartBarIcon
   },
   {
