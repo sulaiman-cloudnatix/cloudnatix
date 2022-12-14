@@ -1,5 +1,6 @@
 import { Header, Footer } from '@ui'
 import {
+  AboutUs,
   Cta,
   EverythingYouNeed,
   HeroSection,
@@ -8,16 +9,11 @@ import {
   Pricing
 } from '@components'
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Header />
-      <HeroSection />
-      <TrustedBy />
-      <EverythingYouNeed />
-      <Cta />
-      <Testimonials />
-      <Pricing />
+      <AboutUs />
       <Footer />
     </div>
   )
