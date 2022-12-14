@@ -11,9 +11,9 @@ export function Testimonials() {
           fill='none'
           viewBox='0 0 404 404'
           role='img'
-          aria-labelledby='svg-workcation'
+          aria-labelledby='svg-cnatix'
         >
-          <title id='svg-workcation'>Workcation</title>
+          <title id='svg-cnatix'>cnatix</title>
           <defs>
             <pattern
               id='ad119f34-7694-4c31-947f-5c9d249b21f3'
@@ -43,7 +43,7 @@ export function Testimonials() {
         <div className='relative'>
           <div className='flex justify-center'>
             <Image
-              className='mx-auto h-44 w-auto absolute -top-28'
+              className='mx-auto h-44 w-auto absolute -top-32 sm:-top-28'
               src='/images/testimonials/optimal.png'
               width={100}
               height={100}
