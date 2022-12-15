@@ -74,7 +74,7 @@ export default function CostAndOperationalIntelligence() {
               infrastructures spanning cloud, cloud native and multi cloud
               environments
             </p>
-            <ul className='list-disc ml-10 mt-3 text-gray-500 space-y-3'>
+            <ul className='list-disc ml-5 md:ml-10 mt-3 text-gray-500 space-y-3'>
               <li>
                 Intelligent cost allocation and showback to optimize a day in
                 the life of your FinOps professionals.

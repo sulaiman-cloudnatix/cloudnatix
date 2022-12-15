@@ -72,7 +72,7 @@ export default function MultiClusterControl() {
               their VMs and Containers with a single command or click without
               fiddling with various IAM roles and disparate access keys.
             </p>
-            <ul className='list-disc ml-10 mt-3 text-gray-500 space-y-3'>
+            <ul className='list-disc ml-5 md:ml-10 mt-3 text-gray-500 space-y-3'>
               <li>
                 Reduce DevOps Toil - DevOps team can automate once, and let the
                 CloudNatix federate the operational plumbing and enterprise

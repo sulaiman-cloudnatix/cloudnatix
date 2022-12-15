@@ -74,7 +74,7 @@ export default function CostAndOperationalIntelligence() {
               remains optimized, reducing idle capacity and resulting wasted
               cloud spend.
             </p>
-            <ul className='list-disc ml-10 mt-3 text-gray-500 space-y-3'>
+            <ul className='list-disc ml-5 md:ml-10 mt-3 text-gray-500 space-y-3'>
               <li>
                 Cloud Cost reduction for companies where cloud costs have become
                 unmanageable, CloudNatix can help you realize immediat cost
