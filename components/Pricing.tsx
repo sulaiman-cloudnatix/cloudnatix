@@ -60,7 +60,7 @@ export function Pricing() {
               <br className='hidden sm:inline lg:hidden' />
             </p>
             <p className='mt-6 text-lg leading-8 text-white/60'>
-              Get started with for CloudNatix Enterprise for Cloud, K8s and
+              Get started with CloudNatix Enterprise for Cloud, K8s and
               Datacenter environments.
             </p>
           </div>

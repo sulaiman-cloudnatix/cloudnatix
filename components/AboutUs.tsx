@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const people = [
   {
-    name: 'Rohit Sethr',
+    name: 'Rohit Seth',
     role: 'Founder & CEO',
     imageUrl: '/images/team/Rohit.jpeg',
     bio: 'Rohit has 25+ years of industry experience. He was at Google for 11 years in leadership roles managing large organizations in core Datacenter infrastructure and Display advertisements. He invented Linux containers and was responsible for Google-wide rollout of containers and other core data center optimization technologies. Earlier he was a Principal Engineer at Intel for over 9 years, responsible for driving Intel platform-related technologies across Linux and Unix ecosystems. Rohit holds a B.E. in Computer Science and Automation from IISc. Bangalore and a BSc. in Mathematics from Delhi University. Rohit has several patents in computer architecture and virtualization technologies.'

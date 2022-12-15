@@ -1,6 +1,7 @@
 import { Client } from '@notionhq/client'
 
 export const blogDatabaseId = process.env.NOTION_BLOG_DATABASE_ID
+export const careersDatabaseId = process.env.NOTION_CAREERS_DATABASE_ID
 
 const notion = new Client({
   auth: process.env.NOTION_KEY

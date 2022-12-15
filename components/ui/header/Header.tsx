@@ -4,6 +4,7 @@ import {
   ArrowPathIcon,
   Bars3Icon,
   BookmarkSquareIcon,
+  BriefcaseIcon,
   ChartBarIcon,
   CursorArrowRaysIcon,
   NewspaperIcon,
@@ -77,6 +78,12 @@ const resources = [
     description: 'Learn more about the team.',
     href: '/about',
     icon: UserGroupIcon
+  },
+  {
+    name: 'Careers',
+    description: 'Join our team.',
+    href: '/careers',
+    icon: BriefcaseIcon
   }
 ]
 
