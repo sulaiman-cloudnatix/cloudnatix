@@ -40,7 +40,7 @@ export const Meta = ({ meta }: MetaProps) => {
         href={`https://www.cloudnatix.vercel.app${router.asPath}`}
       />
       <meta property='og:type' content={defaultMeta.type} />
-      <meta property='og:site_name' content='Vercel' />
+      <meta property='og:site_name' content='CloudNatix' />
       <meta property='og:description' content={defaultMeta.description} />
       <meta property='og:title' content={defaultMeta.title} />
       <meta property='og:image' content={defaultMeta.image} />
