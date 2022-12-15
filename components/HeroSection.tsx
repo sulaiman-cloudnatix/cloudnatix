@@ -128,7 +128,7 @@ export const HeroSection = () => {
             <div className='flex-1' />
           </div>
           <div className='relative mx-auto  px-4 sm:px-6'>
-            <div className='absolute left-0 bottom-0 right-0 w-full h-[70%] bg-[#111727]'>
+            <div className='absolute left-0 bottom-0 right-0 w-full h-[75%] bg-[#111727]'>
               &nbsp;
             </div>
             <Image
