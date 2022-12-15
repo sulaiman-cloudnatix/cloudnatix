@@ -97,23 +97,19 @@ export function Header() {
       <div className='mx-auto max-w-7xl px-4 sm:px-6 bg-white'>
         <div className='flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
-            <Link href='/'>
+            <Link href='/' className='flex items-end space-x-2'>
               <span className='sr-only'>CloudNatix</span>
 
-              <Image
-                alt='CloudNatix logo'
-                src='/images/logos/logo.png'
-                width={500}
-                height={500}
-                className='h-8 w-auto hidden lg:flex'
-              />
               <Image
                 alt='CloudNatix logo'
                 src='/images/logos/logo-cloud.png'
                 width={500}
                 height={500}
-                className='h-8 w-auto lg:hidden flex'
+                className='h-8 w-auto'
               />
+              <h2 className='font-bold text-xl text-natix hidden lg:flex'>
+                CloudNatix
+              </h2>
             </Link>
           </div>
           <div className='-my-2 -mr-2 md:hidden'>

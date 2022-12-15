@@ -1,5 +1,24 @@
+import Image from 'next/image'
+
 const navigation = {
-  main: [
+  solutions: [
+    {
+      name: 'Cost & Operational Intelligence',
+      href: '/solutions/cost-and-operational-intelligence'
+    },
+    { name: 'Cost Reduction', href: '/solutions/cost-reduction' },
+    { name: 'Multi Cluster Control', href: '/solutions/multi-cluster-control' },
+    { name: 'KaaS', href: '/solutions/kaas' }
+  ],
+  support: [
+    {
+      name: 'Support',
+      href: 'https://cloudnatix.atlassian.net/servicedesk/customer/portals'
+    },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Documentation', href: 'https://docs.cloudnatix.com' }
+  ],
+  company: [
     { name: 'About', href: '/about' },
     { name: 'Blog', href: '/blog' },
     { name: 'Careers', href: '/careers' }
@@ -45,38 +64,95 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className='bg-white'>
-      <div className='mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8'>
-        <nav
-          className='-mx-5 -my-2 flex flex-wrap justify-center'
-          aria-label='Footer'
-        >
-          {navigation.main.map((item) => (
-            <div key={item.name} className='px-5 py-2'>
-              <a
-                href={item.href}
-                className='text-base text-gray-500 hover:text-gray-900'
-              >
-                {item.name}
-              </a>
+    <footer className='bg-white' aria-labelledby='footer-heading'>
+      <h2 id='footer-heading' className='sr-only'>
+        Footer
+      </h2>
+      <div className='mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
+        <div className='xl:gap-8 flex flex-col lg:flex-row'>
+          <div className='space-y-8'>
+            <Image
+              alt='CloudNatix logo'
+              src='/images/logos/logo-cloud.png'
+              width={500}
+              height={500}
+              className='h-8 w-auto'
+            />
+            <p className='text-base text-gray-500'>
+              Accelerate innovation with efficient infrastructure by CloudNatix.
+            </p>
+            <div className='flex space-x-6'>
+              {navigation.social.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className='text-gray-400 hover:text-gray-500'
+                >
+                  <span className='sr-only'>{item.name}</span>
+                  <item.icon className='h-6 w-6' aria-hidden='true' />
+                </a>
+              ))}
             </div>
-          ))}
-        </nav>
-        <div className='mt-8 flex justify-center space-x-6'>
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className='text-gray-400 hover:text-gray-500'
-            >
-              <span className='sr-only'>{item.name}</span>
-              <item.icon className='h-6 w-6' aria-hidden='true' />
-            </a>
-          ))}
+          </div>
+          <div className='flex flex-col md:flex-row justify-between items-start w-full lg:mt-0 mt-12'>
+            <div className='flex justify-between w-full md:w-[65%]'>
+              <div>
+                <h3 className='text-base font-medium text-gray-900'>
+                  Solutions
+                </h3>
+                <ul role='list' className='mt-4 space-y-4'>
+                  {navigation.solutions.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className='text-base text-gray-500 hover:text-gray-900'
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h3 className='text-base font-medium text-gray-900'>Support</h3>
+                <ul role='list' className='mt-4 space-y-4'>
+                  {navigation.support.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className='text-base text-gray-500 hover:text-gray-900'
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className='mt-12 md:mt-0'>
+              <h3 className='text-base font-medium text-gray-900'>Company</h3>
+              <ul role='list' className='mt-4 space-y-4'>
+                {navigation.company.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      className='text-base text-gray-500 hover:text-gray-900'
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
-        <p className='mt-8 text-center text-base text-gray-400'>
-          &copy; 2022 CloudNatix, Inc. All rights reserved.
-        </p>
+        <div className='mt-12 border-t border-gray-200 pt-8'>
+          <p className='text-base text-gray-400 xl:text-center'>
+            &copy; 2022 CloudNatix, Inc. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   )
