@@ -38,12 +38,6 @@ export default function Post({ page, blocks }): ReactElement {
         }}
       />
       <Container className='mx-auto max-w-4xl mt-12 md:mt-24 mb-24'>
-        {/* <Layout
-        customMeta={{
-          title: `Imam Zayd | ${page.properties.Post.title[0].plain_text}`,
-          description: page.properties.Summary.rich_text[0].plain_text
-        }}
-      > */}
         <div className='mx-auto mb-6'>
           <H1>{title}</H1>
 
@@ -54,7 +48,6 @@ export default function Post({ page, blocks }): ReactElement {
           </div>
         </div>
         <NotionPage page={page} blocks={blocks} />
-        {/* </Layout> */}
       </Container>
       <Cta />
       <Footer />
