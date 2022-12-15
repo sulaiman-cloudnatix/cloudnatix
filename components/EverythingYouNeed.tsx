@@ -4,6 +4,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@ui'
+import { WorksWhereYouWork } from './WorksWhereYouWork'
 
 // import screenshotExpenses from '@/images/screenshots/expenses.png'
 // import screenshotPayroll from '@/images/screenshots/payroll.png'
@@ -14,25 +15,25 @@ const features = [
   {
     title: 'Observe',
     description:
-      'Observe your Cost & Operational Intelligence across your Public/Private Cloud & K8s',
+      'Observe your Global Cost, Efficiency & Operations with CloudNatix Dashboard.',
     image: '/images/ui/dashboard.jpeg'
   },
   {
     title: 'Understand',
     description:
-      'Understand with Insights to discover optimization opportunities.',
+      'Understand with Insights from CloudNatix recommendation engine.',
     image: '/images/ui/insights.jpeg'
   },
   {
     title: 'Automate',
     description:
-      'Automate recommendation implementation and realize efficiencies.',
+      'Automate across multiple clusters for cost reduction, capacity optimization and reducing MTTR.',
     image: '/images/ui/autopilot.jpeg'
   },
   {
     title: 'Act',
     description:
-      'Act using Operations Manager to optimize your K8s and VM workloads for availability & cost.',
+      'Act across multiple clusters and clouds with CloudNatix Workload Operations Manager.',
     image: '/images/ui/workloads.jpeg'
   }
 ]
@@ -151,6 +152,7 @@ export function EverythingYouNeed() {
             </>
           )}
         </Tab.Group>
+        <WorksWhereYouWork />
       </Container>
     </section>
   )

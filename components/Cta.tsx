@@ -4,7 +4,7 @@ import { HeroBackground } from './ui/backgrounds'
 export function Cta() {
   return (
     <div className='bg-[#10172A] relative overflow-hidden'>
-      <div className='mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8 relative z-10'>
+      <div className='mx-auto max-w-2xl py-24 px-4 text-center sm:py-32 sm:px-6 lg:px-8 relative z-10'>
         <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
           <span className='block'>Boost your infrastructure</span>
           <span className='block'>with CloudNatix</span>
