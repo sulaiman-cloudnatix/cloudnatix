@@ -14,7 +14,7 @@ export function TrustedBy() {
               width={500}
               height={500}
               className='md:h-32 lg:h-44 w-auto'
-              src='/images/logos/client-logos.png'
+              src='/images/logos/Client-Logo-v4.png'
             />
           </div>
         </div>
