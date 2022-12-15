@@ -1,24 +1,39 @@
 import { Header, Footer } from '@ui'
+import { getDatabase, blogDatabaseId } from '@lib'
 import {
   Cta,
   EverythingYouNeed,
   HeroSection,
   Testimonials,
   TrustedBy,
-  Pricing
+  Pricing,
+  FromTheBlog
 } from '@components'
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
       <Header />
+
       <HeroSection />
       <TrustedBy />
       <EverythingYouNeed />
       <Cta />
+      <FromTheBlog posts={posts} />
       <Testimonials />
       <Pricing />
       <Footer />
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const database = await getDatabase(blogDatabaseId, { page_size: 3 })
+
+  return {
+    props: {
+      posts: database
+    },
+    revalidate: 1
+  }
 }

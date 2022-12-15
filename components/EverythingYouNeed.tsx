@@ -59,7 +59,7 @@ export function EverythingYouNeed() {
     <section
       id='features'
       aria-label='Features for running your books'
-      className='relative overflow-hidden  pt-20 pb-28 sm:py-32 bg-[#F5F9FC]'
+      className='relative overflow-hidden  pt-20 pb-28 sm:py-32 bg-[#F9FAFC]'
     >
       <Image
         className='absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]'

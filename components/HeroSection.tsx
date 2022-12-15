@@ -126,18 +126,28 @@ export const HeroSection = () => {
         <div className='relative mt-12'>
           <div className='absolute inset-0 flex flex-col' aria-hidden='true'>
             <div className='flex-1' />
-            <div className='w-full flex-1 bg-slate-900 pb-24'>
-              <BackgroundOne />
-            </div>
           </div>
-          <div className='mx-auto max-w-7xl px-4 sm:px-6'>
+          <div className='relative mx-auto  px-4 sm:px-6'>
+            <div className='absolute left-0 bottom-0 right-0 w-full h-[70%] bg-[#111727]'>
+              &nbsp;
+            </div>
             <Image
-              className='relative rounded-lg w-full shadow-lg'
-              src='/images/ui/dashboard.jpeg'
-              alt='App screenshot'
+              className='absolute left-0 bottom-0 right-0 w-full h-[70%]'
+              src='https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg'
+              alt='asfasf'
               width={1000}
               height={1000}
             />
+            <div className='relative mx-auto max-w-7xl px-4 sm:px-6'>
+              <Image
+                className='relative rounded-lg w-full shadow-lg'
+                src='/images/ui/dashboard.jpeg'
+                alt='App screenshot'
+                priority
+                width={1000}
+                height={1000}
+              />
+            </div>
           </div>
         </div>
       </div>
