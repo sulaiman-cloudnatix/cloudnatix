@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Header, Footer } from '@ui'
+import { Header, Footer, Meta } from '@ui'
 import { Cta } from '@components'
 
 const features = [
@@ -23,6 +23,13 @@ const features = [
 export default function MultiClusterControl() {
   return (
     <div className='bg-white'>
+      <Meta
+        meta={{
+          title: 'CloudNatix | Multi Cluster Control',
+          description:
+            'Control & aggregate resources from multiple clusters as a single planet scale cluster, improving productivity, and reducing MTTR.'
+        }}
+      />
       <Header />
       <div className='mx-auto max-w-6xl py-12 sm:py-20 sm:px-2 lg:px-4'>
         <div className='mx-auto max-w-2xl px-4 lg:max-w-none'>

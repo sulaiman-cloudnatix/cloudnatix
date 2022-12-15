@@ -1,10 +1,16 @@
-import { Header, Footer } from '@ui'
+import { Header, Footer, Meta } from '@ui'
 import { Cta, Blog } from '@components'
 import { getDatabase, blogDatabaseId } from '@lib'
 
 export default function Home({ allPosts }) {
   return (
     <div>
+      <Meta
+        meta={{
+          title: 'CloudNatix | Blog',
+          description: 'Stay up to date with articles from CloudNatix.'
+        }}
+      />
       <Header />
       <Blog posts={allPosts} />
       <Cta />

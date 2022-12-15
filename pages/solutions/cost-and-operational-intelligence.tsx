@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Header, Footer } from '@ui'
+import { Header, Footer, Meta } from '@ui'
 import { Cta } from '@components'
 
 const features = [
@@ -25,6 +25,13 @@ const features = [
 export default function CostAndOperationalIntelligence() {
   return (
     <div className='bg-white'>
+      <Meta
+        meta={{
+          title: 'CloudNatix | Cost and Operational Intelligence',
+          description:
+            'Observe, understand, attribute and forecast application costs and performance across multiple clouds and multiple kubernetes clusters.'
+        }}
+      />
       <Header />
       <div className='mx-auto max-w-6xl py-12 sm:py-20 sm:px-2 lg:px-4'>
         <div className='mx-auto max-w-2xl px-4 lg:max-w-none'>

@@ -1,4 +1,4 @@
-import { Container, Footer, Header, Text } from '@ui'
+import { Container, Footer, Header, Meta, Text } from '@ui'
 import {
   getDatabase,
   blogDatabaseId,
@@ -31,6 +31,12 @@ export default function Post({ page, blocks }): ReactElement {
   return (
     <>
       <Header />
+      <Meta
+        meta={{
+          title: `CloudNatix | ${title}`,
+          description
+        }}
+      />
       <Container className='mx-auto max-w-4xl mt-12 md:mt-24 mb-24'>
         {/* <Layout
         customMeta={{

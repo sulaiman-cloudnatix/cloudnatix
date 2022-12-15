@@ -1,4 +1,4 @@
-import { Header, Footer } from '@ui'
+import { Header, Footer, Meta } from '@ui'
 import { getDatabase, blogDatabaseId } from '@lib'
 import {
   Cta,
@@ -13,8 +13,8 @@ import {
 export default function Home({ posts }) {
   return (
     <div>
+      <Meta />
       <Header />
-
       <HeroSection />
       <TrustedBy />
       <EverythingYouNeed />
