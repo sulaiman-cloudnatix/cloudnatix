@@ -93,9 +93,9 @@ function classNames(...classes) {
 
 export function Header() {
   return (
-    <Popover className='relative bg-white z-50'>
+    <Popover className='sticky top-0 bg-white z-50'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 bg-white'>
-        <div className='flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10'>
+        <div className='flex items-center justify-between border-b-2 border-gray-100 py-3 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
             <Link href='/' className='flex items-end space-x-2'>
               <span className='sr-only'>CloudNatix</span>
@@ -273,6 +273,12 @@ export function Header() {
             >
               Log in
             </Link>
+            <Link
+              href='https://learn.cloudnatix.com/cloudnatix-demo'
+              className='ml-5 inline-flex items-center rounded-md border border-transparent bg-natix px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-natix/90 focus:outline-none focus:ring-2 focus:ring-natix focus:ring-offset-2'
+            >
+              Request Demo
+            </Link>
           </div>
         </div>
       </div>
@@ -355,12 +361,12 @@ export function Header() {
                 ))}
               </div>
               <div>
-                <a
-                  href='#'
-                  className='flex w-full items-center justify-center rounded-md border border-transparent bg-natix px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-natix'
+                <Link
+                  href='https://learn.cloudnatix.com/cloudnatix-demo'
+                  className='w-full flex justify-center rounded-md border border-transparent bg-natix px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-natix/90 focus:outline-none focus:ring-2 focus:ring-natix focus:ring-offset-2'
                 >
-                  Contact sales
-                </a>
+                  Request demo
+                </Link>
                 <p className='mt-6 text-center text-base font-medium text-gray-500'>
                   Existing customer?{' '}
                   <Link
