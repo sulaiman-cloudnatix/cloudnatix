@@ -107,7 +107,7 @@ export function Header() {
                 height={500}
                 className='h-8 w-auto'
               />
-              <h2 className='font-bold text-xl text-natix hidden lg:flex'>
+              <h2 className='font-semibold text-xl text-natix hidden lg:flex'>
                 CloudNatix
               </h2>
             </Link>
