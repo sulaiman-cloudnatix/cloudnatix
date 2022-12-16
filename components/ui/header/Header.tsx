@@ -8,13 +8,11 @@ import {
   ChartBarIcon,
   CursorArrowRaysIcon,
   NewspaperIcon,
-  PhoneIcon,
   PlayIcon,
   ShieldCheckIcon,
   Squares2X2Icon,
   UserGroupIcon,
-  XMarkIcon,
-  ComputerDesktopIcon
+  XMarkIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
@@ -38,7 +36,7 @@ const solutions = [
     icon: CursorArrowRaysIcon
   },
   {
-    name: 'VM & Kubernetes Cost Redeuction',
+    name: 'VM & Kubernetes Cost Reduction',
     description:
       'Reduce cloud & kubernetes costs while optimizing cloud usage by matching resource allocation with application needs across traditional VMs and Cloud Native Applications',
     href: '/solutions/cost-reduction',

@@ -5,7 +5,7 @@ const tiers = [
   {
     id: 'tier-enterprise',
     name: 'Enterprise',
-    href: '#',
+    href: 'https://learn.cloudnatix.com/cloudnatix-demo',
     priceMonthly: 'Available now',
     buttonTitle: 'Request a demo',
     description:
