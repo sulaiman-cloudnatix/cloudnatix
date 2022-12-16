@@ -45,7 +45,7 @@ export function AboutUs() {
                   <div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
                     <div className='aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4'>
                       <Image
-                        className='rounded-lg object-cover shadow-lg'
+                        className='sm:h-full w-auto sm:w-full rounded-lg object-cover shadow-lg'
                         src={person.imageUrl}
                         height={500}
                         width={500}
