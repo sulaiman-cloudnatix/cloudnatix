@@ -353,12 +353,6 @@ export function Header() {
                     Pricing
                   </Link>
 
-                  <Link
-                    href='https://docs.cloudnatix.com/'
-                    className='text-base font-medium text-gray-900 hover:text-gray-700'
-                  >
-                    Docs
-                  </Link>
                   {resources.map((item) => (
                     <Link
                       key={item.name}
