@@ -68,7 +68,7 @@ export function FromTheBlog({ posts }: { posts: [] }) {
                     </Link>
                   </div>
                   <div className='mt-6 flex items-center'>
-                    <div className='ml-3'>
+                    <div>
                       <div className='flex space-x-1 text-sm text-gray-500'>
                         <time dateTime={fullDate}>{fullDate}</time>
                         <span aria-hidden='true'>&middot;</span>
