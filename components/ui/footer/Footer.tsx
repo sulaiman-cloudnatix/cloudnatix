@@ -97,7 +97,7 @@ export function Footer() {
               height={500}
               className='h-8 w-auto'
             />
-            <p className='text-base text-gray-500'>
+            <p className='text-base text-gray-500 w-full sm:w-[75%]'>
               A Cloud Infrastructure revolution against high costs, low
               utilization, and multi-cloud complexity across legacy and cloud
               native workloads.
