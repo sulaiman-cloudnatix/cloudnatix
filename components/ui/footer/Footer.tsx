@@ -82,6 +82,7 @@ const navigation = {
 }
 
 export function Footer() {
+  const year = new Date().getFullYear()
   return (
     <footer className='bg-white' aria-labelledby='footer-heading'>
       <h2 id='footer-heading' className='sr-only'>
@@ -171,7 +172,7 @@ export function Footer() {
         </div>
         <div className='mt-12 border-t border-gray-200 pt-8'>
           <p className='text-base text-gray-400 xl:text-center'>
-            &copy; 2022 CloudNatix, Inc. All rights reserved.
+            &copy; {year} CloudNatix, Inc. All rights reserved.
           </p>
         </div>
       </div>
