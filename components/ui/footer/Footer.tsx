@@ -98,7 +98,9 @@ export function Footer() {
               className='h-8 w-auto'
             />
             <p className='text-base text-gray-500'>
-              Accelerate innovation with efficient infrastructure by CloudNatix.
+              A Cloud Infrastructure revolution against high costs, low
+              utilization, and multi-cloud complexity across legacy and cloud
+              native workloads.
             </p>
             <div className='flex space-x-6'>
               {navigation.social.map((item) => (
