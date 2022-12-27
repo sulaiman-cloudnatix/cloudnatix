@@ -70,20 +70,18 @@ export const CommunityEditionSignup = () => {
 _______________________________________________________`
     }
 
-    // await axios.post(
-    //   process.env.NEXT_PUBLIC_SLACK_WEBHOOK,
-    //   JSON.stringify(data),
-    //   {
-    //     withCredentials: false,
-    //     transformRequest: [
-    //       (data, headers) => {
-    //         // delete headers?.post?['Content-Type']
-
-    //         return data
-    //       }
-    //     ]
-    //   }
-    // )
+    await axios.post(
+      process.env.NEXT_PUBLIC_SLACK_WEBHOOK,
+      JSON.stringify(data),
+      {
+        withCredentials: false,
+        transformRequest: [
+          (data, headers) => {
+            return data
+          }
+        ]
+      }
+    )
     setSuccess(true)
   }
 
