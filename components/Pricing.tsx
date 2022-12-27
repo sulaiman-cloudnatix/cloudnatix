@@ -1,5 +1,5 @@
-/* This example requires Tailwind CSS v3.0+ */
 import { CheckIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 const tiers = [
   {
@@ -25,7 +25,7 @@ const tiers = [
   {
     id: 'tier-community',
     name: 'Community (Free) edition',
-    href: '#',
+    href: '/community-edition',
     priceMonthly: 'Coming Soon',
     buttonTitle: 'Sign up for early access',
     description:
@@ -108,13 +108,13 @@ export function Pricing() {
                           ))}
                         </ul>
                         <div className='mt-8'>
-                          <a
+                          <Link
                             href={tier.href}
                             className='inline-block w-full rounded-lg bg-natix px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-natix'
                             aria-describedby={tier.id}
                           >
                             {tier.buttonTitle}
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

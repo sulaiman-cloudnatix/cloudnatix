@@ -5,11 +5,13 @@ import { CheckIcon } from '@heroicons/react/24/outline'
 export function Modal({
   open,
   setOpen,
-  children
+  children,
+  size
 }: {
   open: boolean
   setOpen: React.Dispatch<boolean>
   children: any
+  size?: string
 }) {
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -37,7 +39,11 @@ export function Modal({
               leaveFrom='opacity-100 translate-y-0 sm:scale-100'
               leaveTo='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
             >
-              <Dialog.Panel className='relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-7xl sm:p-6'>
+              <Dialog.Panel
+                className={`relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 ${
+                  size || 'w-full sm:max-w-7xl'
+                } sm:p-6`}
+              >
                 {children}
               </Dialog.Panel>
             </Transition.Child>
