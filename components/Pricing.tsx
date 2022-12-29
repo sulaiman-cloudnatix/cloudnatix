@@ -24,9 +24,9 @@ const tiers = [
   },
   {
     id: 'tier-community',
-    name: 'Community (Free) edition',
+    name: 'Community edition',
     href: '/community-edition',
-    priceMonthly: 'Coming Soon',
+    priceMonthly: 'Coming Soon (Free)',
     buttonTitle: 'Sign up for early access',
     description:
       'Planet-Scale Cluster Management Solution for Virtual Machine and Kubernetes clusters across Amazon AWS, EKS, Microsoft Azure, AKS, Google GCP and GKE.',
@@ -83,7 +83,7 @@ export function Pricing() {
                       >
                         {tier.priceMonthly}
                       </h3>
-                      <div className='mt-4 flex items-baseline text-3xl sm:text-5xl font-bold tracking-tight text-gray-900'>
+                      <div className='mt-4 flex items-baseline text-3xl sm:text-4xl font-bold tracking-tight text-gray-900'>
                         {tier.name}
                       </div>
                       <p className='mt-6 text-base leading-7 text-gray-600'>
