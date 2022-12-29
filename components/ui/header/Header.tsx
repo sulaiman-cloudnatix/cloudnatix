@@ -12,7 +12,8 @@ import {
   ShieldCheckIcon,
   Squares2X2Icon,
   UserGroupIcon,
-  XMarkIcon
+  XMarkIcon,
+  CloudIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
@@ -59,6 +60,12 @@ const solutions = [
 ]
 
 const resources = [
+  {
+    name: 'Community Edition',
+    description: 'Join CloudNatix Community Edition for free!',
+    href: '/community-edition',
+    icon: CloudIcon
+  },
   {
     name: 'Docs',
     description: 'Head to our documentation site.',

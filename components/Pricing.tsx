@@ -81,10 +81,10 @@ export function Pricing() {
                         className='text-lg font-semibold leading-8 tracking-tight text-natix'
                         id={tier.id}
                       >
-                        {tier.name}
-                      </h3>
-                      <div className='mt-4 flex items-baseline text-5xl font-bold tracking-tight text-gray-900'>
                         {tier.priceMonthly}
+                      </h3>
+                      <div className='mt-4 flex items-baseline text-3xl sm:text-5xl font-bold tracking-tight text-gray-900'>
+                        {tier.name}
                       </div>
                       <p className='mt-6 text-base leading-7 text-gray-600'>
                         {tier.description}
