@@ -7,9 +7,8 @@ export default function CommunityEdition() {
     <div>
       <Meta
         meta={{
-          title: 'CloudNatix | Careers',
-          description:
-            'If you are passionate about future of compute infrastructure, want to simplify infrastructure while making it efficient, we are the company for you. We are looking for engineering talents for the following positions.'
+          title: 'CloudNatix | Community Edition',
+          description: 'Sign up for CloudNatix Community Edition for free!'
         }}
       />
       <Header />
