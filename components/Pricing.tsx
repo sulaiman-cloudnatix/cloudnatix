@@ -28,7 +28,7 @@ const tiers = [
     id: 'tier-community',
     name: 'Community edition',
     href: '/community-edition',
-    priceMonthly: 'Coming Soon (Free)',
+    priceMonthly: 'Coming soon (Free)',
     buttonTitle: 'Sign up for early access',
     description:
       'Planet-Scale Cluster Management Solution for Virtual Machine and Kubernetes clusters across Amazon AWS, EKS, Microsoft Azure, AKS, Google GCP and GKE.',

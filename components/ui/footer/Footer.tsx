@@ -15,6 +15,7 @@ const navigation = {
       name: 'Support',
       href: 'https://cloudnatix.atlassian.net/servicedesk/customer/portals'
     },
+    { name: 'Contact us', href: '/contact' },
     { name: 'Pricing', href: '/#pricing' },
     { name: 'Documentation', href: 'https://docs.cloudnatix.com' }
   ],

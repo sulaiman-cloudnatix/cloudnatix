@@ -13,7 +13,8 @@ import {
   Squares2X2Icon,
   UserGroupIcon,
   XMarkIcon,
-  CloudIcon
+  CloudIcon,
+  PhoneIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
@@ -60,6 +61,12 @@ const solutions = [
 ]
 
 const resources = [
+  {
+    name: 'Contact CloudNatix',
+    description: 'Get in touch with us',
+    href: '/contact',
+    icon: PhoneIcon
+  },
   {
     name: 'Community Edition',
     description: 'Join CloudNatix Community Edition for free!',
