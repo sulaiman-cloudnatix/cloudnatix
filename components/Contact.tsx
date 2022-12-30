@@ -84,7 +84,6 @@ _______________________________________________________`
           <h2 className='text-xl font-semibold leading-8 text-black mb-5'>
             Thank you, {f}, for reaching out. We will get back to you shortly.
           </h2>
-          <p className='text-lg'>We&apos;ll be in touch soon.</p>
           <button
             onClick={() => router.push('/')}
             className='sm:col-span-2 mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-natix px-5 py-3 text-base font-medium text-white hover:bg-natix/70'
@@ -174,6 +173,7 @@ _______________________________________________________`
               label='Message'
               value={message}
               setOnChange={setMessage}
+              required={true}
             />
           </div>
           <button
