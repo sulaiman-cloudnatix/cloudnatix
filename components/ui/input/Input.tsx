@@ -44,3 +44,33 @@ export const Input = ({
     </div>
   )
 }
+
+export const TextArea = ({
+  id,
+  className,
+  placeholder,
+  label,
+  setOnChange,
+  value,
+  required = false
+}: InputProps) => {
+  return (
+    <div className={className}>
+      <label htmlFor={id} className='block text-sm font-medium text-gray-700'>
+        {label}
+      </label>
+      <div className='mt-1'>
+        <textarea
+          required={required}
+          name={id}
+          id={id}
+          rows={8}
+          value={value}
+          onChange={(e) => setOnChange(e.target.value)}
+          className={`block w-full rounded-md border-gray-300 shadow-sm focus:border-natix focus:ring-natix sm:text-sm`}
+          placeholder={placeholder || label}
+        />
+      </div>
+    </div>
+  )
+}

@@ -5,9 +5,11 @@ const tiers = [
   {
     id: 'tier-enterprise',
     name: 'Enterprise',
-    href: 'https://learn.cloudnatix.com/cloudnatix-demo',
+    secondaryHref: 'https://learn.cloudnatix.com/cloudnatix-demo',
+    href: '/contact',
     priceMonthly: 'Available now',
-    buttonTitle: 'Request a demo',
+    secondaryButtonTitle: 'Request demo',
+    buttonTitle: 'Contact sales',
     description:
       'Enterprise-Grade Planet-Scale Cluster Management Solution for Virtual Machine and Kubernetes clusters across Amazon AWS, EKS, Microsoft Azure, AKS, Google GCP and GKE.',
     features: [
@@ -108,13 +110,32 @@ export function Pricing() {
                           ))}
                         </ul>
                         <div className='mt-8'>
-                          <Link
-                            href={tier.href}
-                            className='inline-block w-full rounded-lg bg-natix px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-natix'
-                            aria-describedby={tier.id}
-                          >
-                            {tier.buttonTitle}
-                          </Link>
+                          {tier.id === 'tier-enterprise' ? (
+                            <>
+                              <Link
+                                href={tier.secondaryHref!}
+                                className='inline-block w-full rounded-lg bg-gray-100 px-4 py-2.5 text-center text-sm font-semibold leading-5 mb-3 text-black shadow-sm hover:bg-gray-200'
+                                aria-describedby={tier.id}
+                              >
+                                {tier.secondaryButtonTitle}
+                              </Link>
+                              <Link
+                                href={tier.href}
+                                className='inline-block w-full rounded-lg bg-natix px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-natix'
+                                aria-describedby={tier.id}
+                              >
+                                {tier.buttonTitle}
+                              </Link>
+                            </>
+                          ) : (
+                            <Link
+                              href={tier.href}
+                              className='inline-block w-full rounded-lg bg-natix px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-natix'
+                              aria-describedby={tier.id}
+                            >
+                              {tier.buttonTitle}
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </div>
