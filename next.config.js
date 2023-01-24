@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    remotePatterns: [{ protocol: 'https', hostname: 'tailwindui.com' }]
+    remotePatterns: [
+      { protocol: 'https', hostname: 'tailwindui.com' },
+      { protocol: 'https', hostname: 's3.us-west-2.amazonaws.com' }
+    ]
   },
   typescript: {
     // !! WARN !!

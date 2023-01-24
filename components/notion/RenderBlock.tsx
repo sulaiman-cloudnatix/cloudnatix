@@ -1,4 +1,4 @@
-import React, { Fragment, ReactElement } from 'react'
+import React, { Fragment, ReactElement, useState } from 'react'
 import {
   Text,
   Callout,
@@ -11,9 +11,10 @@ import {
   H3,
   HR,
   ToDo,
-  Img,
   P
 } from '@notion/ui'
+import Image from 'next/image'
+import { Modal } from '../ui/modal'
 
 const getTableCells = (row: any[]): ReactElement => {
   return (
@@ -36,6 +37,7 @@ export function RenderBlock(
   block: any,
   isChild?: boolean
 ): ReactElement | string {
+  const [large, setLarge] = useState(false)
   const { type, id } = block
   const value = block[type]
 
@@ -99,18 +101,46 @@ export function RenderBlock(
       return <Page blocks={value} />
     case 'image':
       // eslint-disable-next-line no-case-declarations
+      console.log('HELLOOOO')
       const src =
         value.type === 'external' ? value.external.url : value.file.url
       // eslint-disable-next-line no-case-declarations
       const caption =
         value.caption.length > 0 ? value.caption[0].plain_text : ''
       return (
-        <figure className=''>
-          <Img src={src} alt={caption} size='100%' />
-          {caption && (
-            <figcaption className='text-gray-500'>{caption}</figcaption>
-          )}
-        </figure>
+        <>
+          <Modal open={large} setOpen={setLarge}>
+            <figure className='w-full flex flex-col justify-center items-center'>
+              <Image
+                src={src}
+                alt={caption}
+                width={500}
+                height={500}
+                priority
+                className='h-full w-full'
+              />
+              {caption && (
+                <figcaption className='mt-5 text-gray-500'>
+                  {caption}
+                </figcaption>
+              )}
+            </figure>
+          </Modal>
+          <figure className='w-full flex flex-col justify-center items-center'>
+            <Image
+              onClick={() => setLarge(true)}
+              src={src}
+              alt={caption}
+              width={500}
+              height={500}
+              priority
+              className='h-full w-auto cursor-pointer'
+            />
+            {caption && (
+              <figcaption className='mt-5 text-gray-500'>{caption}</figcaption>
+            )}
+          </figure>
+        </>
       )
     case 'column_list':
       return (
