@@ -101,7 +101,6 @@ export function RenderBlock(
       return <Page blocks={value} />
     case 'image':
       // eslint-disable-next-line no-case-declarations
-      console.log('HELLOOOO')
       const src =
         value.type === 'external' ? value.external.url : value.file.url
       // eslint-disable-next-line no-case-declarations

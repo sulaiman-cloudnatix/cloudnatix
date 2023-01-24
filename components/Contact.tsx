@@ -46,7 +46,6 @@ export const Contact = () => {
     Message: ${message}
 _______________________________________________________`
     }
-    console.log(data)
 
     await axios.post(
       process.env.NEXT_PUBLIC_SLACK_CONTACT_WEBHOOK,
