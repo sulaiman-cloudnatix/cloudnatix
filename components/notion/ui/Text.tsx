@@ -79,7 +79,7 @@ const sizeH5 = 'text-lg md:text-xl lg:text-xl'
 const attributesH5 = 'font-bold tracking-tight leading-tight'
 
 const sizeP = 'text-md sm:text-lg'
-const attributesP = 'leading-relaxed'
+const attributesP = 'leading-relaxed tracking-wide'
 
 const sizeMP = 'text-sm sm:text-md'
 const attributesMP = 'leading-relaxed'

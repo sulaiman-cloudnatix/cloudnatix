@@ -12,7 +12,7 @@ export default function Home({ allPosts }) {
         }}
       />
       <Header />
-      <Blog posts={allPosts} />
+      <Blog posts={allPosts.reverse()} />
       <Cta />
       <Footer />
     </div>
