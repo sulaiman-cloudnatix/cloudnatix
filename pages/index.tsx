@@ -28,11 +28,11 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const database = await getDatabase(blogDatabaseId, { page_size: 3 })
+  const database = await getDatabase(blogDatabaseId)
 
   return {
     props: {
-      posts: database
+      posts: database.reverse().slice(0, 3)
     },
     revalidate: 1
   }
