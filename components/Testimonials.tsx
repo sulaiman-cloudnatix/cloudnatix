@@ -43,10 +43,11 @@ export function Testimonials() {
         <div className='relative'>
           <div className='flex justify-center'>
             <Image
-              className='mx-auto h-32 w-auto absolute -top-24'
+              className='mx-auto h-32 z-50 w-auto absolute -top-24'
               src='/images/testimonials/optimal.png'
-              width={100}
-              height={100}
+              width={500}
+              height={500}
+              priority
               alt='Optimal Asset Management'
             />
           </div>
