@@ -129,7 +129,7 @@ export function Header() {
                   className="h-8 w-auto"
                 />
                 <h2 className="font-semibold text-xl text-natix hidden lg:flex">
-                  CloudNatix
+                  CloudNatix hello
                 </h2>
               </Link>
             </div>
